@@ -3,6 +3,6 @@
 ##Descripción:
 
 ##Integrantes:
--Nicole Álvarez
+-Nicole Alvarez
 -Carla Sánchez
 -Lessette Zambrano
