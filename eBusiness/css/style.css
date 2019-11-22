@@ -2348,6 +2348,32 @@ span.email-notes {
   padding-top: 30px;
 }
 
+#infoicon{
+  font-size: 24px;
+  color: #30B3C6;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.select-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px; }
+
+  select {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  padding: 2px 0;
+  color: #222;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif; }
+  input:focus, select:focus {
+    color: #222;
+    border-bottom: 2px solid #4966b1; }
+
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
