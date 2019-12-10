@@ -1,0 +1,26 @@
+[{"Nombre":"Juan Córdova",
+ "SectorInteres": "Tecnología",
+ "noInversiones":4,
+ "TipoFinanciamiento":"Capital común"
+ },
+ {"Nombre":"Ximena Carrera",
+ "SectorInteres": "Restaurantes",
+ "noInversiones":2,
+ "TipoFinanciamiento":"Crédito Ordinario"
+ },
+ 
+ {"Nombre":"Andrea Santacruz",
+ "SectorInteres": "Varios",
+ "noInversiones":5,
+ "TipoFinanciamiento":"Capital común"
+ },
+ 
+ {
+ "Nombre":"Daniel Casanova",
+ "SectorInteres": "Tecnología",
+ "noInversiones":3,
+ "TipoFinanciamiento":"Crédito Ordinario"
+ }
+
+]
+ 
