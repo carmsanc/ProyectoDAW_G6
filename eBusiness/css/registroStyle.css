@@ -107,7 +107,7 @@ body {
   font-size: 14px;
   line-height: 1.8;
   color: #fff;
-  background-image: url('../img/slider/slider2.jpg');
+  background-image: url('../img/background/bg4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
@@ -383,4 +383,3 @@ li.init {
   position: absolute;
   display: none;
 }
-
