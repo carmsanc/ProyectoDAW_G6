@@ -1,0 +1,34 @@
+[{"Nombre Startup":"Cafetería Buozzi 42",
+ "Visitas":45,
+ "Categoría":"Restaurantes",
+ "Direccion":"Av. Isidro Ayora"
+ },
+ {
+ "Nombre Startup":"Ferrauto",
+ "Visitas":60,
+ "Categoría":"Varios",
+ "Direccion":"Av. Isidro Ayora"
+ },
+ 
+ {
+ "Nombre Startup":"Iverno",
+ "Visitas":87,
+ "Categoría":"Tecnología",
+ "Direccion":"Alborada"
+ },
+ 
+ {
+ "Nombre Startup":"bambooSmile",
+ "Visitas":68,
+ "Categoría":"Varios",
+ "Direccion":"Malecon 512"
+ },
+ {
+ "Nombre Startup":"Oki Ecologic",
+ "Visitas":80,
+ "Categoría":"Higiene",
+ "Direccion":"Urdesa"
+ }
+
+]
+ 
