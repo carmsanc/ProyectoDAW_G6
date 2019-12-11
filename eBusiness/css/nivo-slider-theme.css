@@ -41,6 +41,10 @@ Supports Thumbs: true
   font-weight: 700;
 }
 
+.blog-post-wrapper,.page-head-blog{
+  padding:  50px;
+}
+
 .layer-1-2 h1 {
   color: #fff;
   font-size: 50px;
