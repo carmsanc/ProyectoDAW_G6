@@ -1,110 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro Inversionista - Startelp</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/registroStyle.css">
-
-
-</head>
-<body>
-
-    <div class="main">
-
-        <div class="container">
-            <form method="POST" class="appointment-form" id="appointment-form">
-                <a href="index.html"><img src="img/logo.png" alt="logo" title="Startelp">   </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Registro Inversionista - Startelp</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+            rel="stylesheet">
+            <!-- Bootstrap CSS File -->
+            <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Font Icon -->
+            <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+            <!-- Main css -->
+            
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <!-- Responsive Stylesheet File -->
+            <link href="css/responsive.css" rel="stylesheet">
+        </head>
+        <body data-spy="scroll" data-target="#navbar-example" >
+            <!-- header-area start -->
+            <div id="sticker" class="header-area" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <!-- Navigation -->
+                            <nav class="navbar navbar-default">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
+                                    <!-- Brand -->
+                                    <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                        <h1 ><span>S</span>tartelp</h1>
+                                        
+                                    </a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active">
+                                            <a class="page-scroll" href="index.html#home">Home</a>
+                                        </li>
+                                        <li>
+                                            <a class="page-scroll" href="index.html#about">Nosotros</a>
+                                        </li>
+                                        <li>
+                                            <a class="page-scroll" href="blog.html">Noticias</a>
+                                        </li>
+                                        <li>
+                                            <a class="page-scroll" href="index.html#faq">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a class="page-scroll" href="index.html#team">Equipo</a>
+                                        </li>
+                                        <li>
+                                            <a class="page-scroll" href="index.html#contacto">Contacto</a>
+                                        </li>
+                                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Login<span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="login.html" >Startup</a></li>
+                                            <li><a href="login.html" >Inversionista</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- navbar-collapse -->
+                        </nav>
+                        <!-- END: Navigation -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area end -->
+    </header>
+    <!-- header end -->
+    <div class="main bodyreg" >
+        <div class="container1">
+            <form method="POST" class="appointment-form1" id="appointment-form">
+                
                 <h2 id="titulo">Registro de Inversionista</h2>
                 <div class="form-group-1">
-                    <input type="text" name="name" id="name" placeholder="Nombre del completo" required />
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
-                    <input type="number" name="phone_number" id="phone_number" placeholder="Número de teléfono" required />
-                    <input type="address" name="address" id="address" placeholder="Dirección de oficina/domicilio" required />
+                    <input class = "input1" type="text" name="name" id="name" placeholder="Nombre completo" required />
+                    <input class = "input1" type="email" name="email" id="email" placeholder="Correo electrónico" required />
+                    <input class = "input1" type="number" name="phone_number" id="phone_number" placeholder="Número de teléfono" required />
+                    <input class = "input1" type="address" name="address" id="address" placeholder="Dirección de oficina/domicilio" required />
                     <div class="select-list">
-                        <select name="city" id="city">
+                        <select class="select1" name="city" id="city">
                             <option disabled="disabled" selected="selected">Ciudad</option>
                             <option value="gye">Guayaquil</option>
                             <option value="duran">Durán</option>
                             <option value="daule">Daule</option>
                         </select>
-
-                    <div class="input-group">
-                    <label class="label">¿Ha sido inversionista?</label>
-                        <div class="p-t-10">
-                            <label class="radio-container m-r-45">Si
-                                <input type="radio" checked="checked" name="exp">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">No
-                                <input type="radio" name="exp">
-                                <span class="checkmark"></span>
-                            </label>
+                        <div class="input-group">
+                            <h3  class="regh3">¿Ha sido inversionista?</h3>
+                            <div class="p-t-10">
+                                <label class="radio-container m-r-45">Si
+                                    <input type="radio" checked="checked" name="exp">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="exp">
+                                    <span class="checkmark"></span>
+                                </label>
                             </div>
                         </div>
-
-                    <div class="input-group">
-                        <label class="label">¿Qué tipo de financiamiento ha facilitado?*</label>
-                        <div class="p-t-10">
-                            <label class="radio-container m-r-45">Capital Común
-                                <input type="radio" checked="checked" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">Crédito Ordinario
-                                <input type="radio" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">Arrendamiento
-                                <input type="radio" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">Crowdfunding
-                                <input type="radio" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">Capital Preferente
-                                <input type="radio" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">Ninguno
-                                <input type="radio" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="radio-container">Otro
-                                <input type="radio" name="figure">
-                                <span class="checkmark"></span>
-                            </label>
+                        <div class="input-group">
+                            <h3 class="regh3">¿Qué tipo de financiamiento ha facilitado?*</h3>
+                            <div class="p-t-10">
+                                <label class="radio-container m-r-45">Capital Común
+                                    <input type="radio" checked="checked" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container ">Crédito Ordinario
+                                    <input type="radio" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Arrendamiento
+                                    <input type="radio" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Crowdfunding
+                                    <input type="radio" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Capital Preferente
+                                    <input type="radio" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container ">Ninguno
+                                    <input type="radio" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container ">Otro
+                                    <input type="radio" name="figure">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="select-list">
-                    	<h3>¿En qué sector económico estaría interesado en invertir/financiar? </h3>
-                        <select name="inversion_type" id="inversion_type">
-                            <option selected value="">Agroindustria</option>
-                            <option value="TIC">TIC</option>
-                            <option value="consumo">Bienes de consumo</option>
-                        </select>
-                    </div>
-                <div class="form-check">
-                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                    <label for="agree-term" class="label-agree-term"><span><span></span></span>Estoy de acuerdo con los  <a href="#" class="term-service">Términos y condiciones</a></label>
+                        <div class="select-list">
+                            <h3 class="regh3">¿En qué sector económico estaría interesado en invertir/financiar? </h3>
+                            <select name="inversion_type" id="inversion_type">
+                                <option selected value="">Agroindustria</option>
+                                <option value="TIC">TIC</option>
+                                <option value="consumo">Bienes de consumo</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>Estoy de acuerdo con los  <a href="#" class="term-service">Términos y condiciones</a></label>
+                        </div>
+                        <div id="cntBoton" class="form-submit">
+                            <input type="submit" name="submit" id="submit" class="submitbtn" value="Registrar" />
+                        </div>
+                    </form>
                 </div>
-                <div id="cntBoton" class="form-submit">
-                    <input type="submit" name="submit" id="submit" class="submit" value="Registrar" />
-                </div>
-            </form>
-        </div>
-
-    </div>
-
-    <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-</html>
+            </div>
+            <!-- JS -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="js/main.js"></script>
+        </body>
+    </html>

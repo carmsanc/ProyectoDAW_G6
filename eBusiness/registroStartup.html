@@ -1,120 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registro Startup - Startelp</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/registroStyle.css">
-
-
-</head>
-<body>
-
-    <div class="main">
-
-        <div class="container">
-            <form method="POST" class="appointment-form" id="appointment-form">
-                <a href="index.html"><img src="img/logo.png" alt="logo" title="Startelp">   </a>
-                <h2>Registro de Startup</h2>
-                <div class="form-group-1">
-                    <input type="text" name="title" id="title" placeholder="Nombre de startup" required />
-                    <input type="text" name="name" id="name" placeholder="Nombre del representante" required />
-                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
-                    <input type="number" name="phone_number" id="phone_number" placeholder="Número de teléfono" required />
-                    <input type="address" name="address" id="address" placeholder="Dirección de oficina/domicilio" required />
-                        <select name="activity" id="course_type">
-                            <option  disabled="disabled" selected="selected">Actividad económica</option>
-                            <option value="comida">Comida</option>
-                            <option value="tecnologia">Tecnología</option>
-                            <option value="artesania">Artesanía</option>
-
-                        </select>
-                    <div class="select-list">
-                        <select name="city" id="city">
-                            <option disabled="disabled" selected="selected">Ciudad</option>
-                            <option value="gye">Guayaquil</option>
-                            <option value="duran">Durán</option>
-                            <option value="daule">Daule</option>
-                        </select>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Registro Startup - Startelp</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Icon -->
+        <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+        <!-- Main css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Responsive Stylesheet File -->
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#navbar-example">
+        <!-- header-area start -->
+        <div id="sticker" class="header-area" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <!-- Navigation -->
+                        <nav class="navbar navbar-default">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <!-- Brand -->
+                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                    <h1 ><span>S</span>tartelp</h1>
+                                    
+                                </a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active">
+                                        <a class="page-scroll" href="index.html#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="index.html#about">Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="blog.html">Noticias</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="index.html#faq">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="index.html#team">Equipo</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-scroll" href="index.html#contacto">Contacto</a>
+                                    </li>
+                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Login<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="login.html" >Startup</a></li>
+                                        <li><a href="login.html" >Inversionista</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- navbar-collapse -->
+                    </nav>
+                    <!-- END: Navigation -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-area end -->
+</header>
+<!-- header end -->
+<div class="main bodyreg">
+    <div class="container1">
+        <form method="POST" class="appointment-form1" id="appointment-form">
+            
+            <h2>Registro de Startup</h2>
+            <div class="form-group-1">
+                <input class = "input1" type="text" name="title" id="title" placeholder="Nombre de startup" required />
+                <input class = "input1" type="text" name="name" id="name" placeholder="Nombre del representante" required />
+                <input class = "input1" type="email" name="email" id="email" placeholder="Correo electrónico" required />
+                <input class = "input1" type="number" name="phone_number" id="phone_number" placeholder="Número de teléfono" required />
+                <input class = "input1" type="address" name="address" id="address" placeholder="Dirección de oficina/domicilio" required />
+                <select class="select1" name="activity" id="course_type">
+                    <option  disabled="disabled" selected="selected">Actividad económica</option>
+                    <option value="comida">Comida</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="artesania">Artesanía</option>
+                </select>
+                <div class="select-list">
+                    <select name="city" id="city">
+                        <option disabled="disabled" selected="selected">Ciudad</option>
+                        <option value="gye">Guayaquil</option>
+                        <option value="duran">Durán</option>
+                        <option value="daule">Daule</option>
+                    </select>
                     <div class="input-group">
-                    <label class="label">Tipo de emprendimiento</label>
+                        <h3 class="regh3">Tipo de emprendimiento</h3>
                         <div class="p-t-10">
                             <label class="radio-container m-r-45">Intraemprendimiento
                                 <input type="radio" checked="checked" name="type">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radio-container">Emprendimiento
+                            <label class="radio-container ">Emprendimiento
                                 <input type="radio" name="type">
                                 <span class="checkmark"></span>
                             </label>
-                            </div>
                         </div>
+                    </div>
                     <div class="input-group">
-                        <label class="label">Figura donde reside el emprendimiento (Escoger una sola opción)</label>
+                        <h3 class="regh3">Figura donde reside el emprendimiento (Escoger una sola opción)</h3>
                         <div class="p-t-10">
-                            <label class="radio-container m-r-45">Persona natural
+                            <label class="radio-container m-r-45 label1">Persona natural
                                 <input type="radio" checked="checked" name="figure">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radio-container">S.A.
+                            <label class="radio-container label1">S.A.
                                 <input type="radio" name="figure">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radio-container">Cía. Ltda.
+                            <label class="radio-container label1">Cía. Ltda.
                                 <input type="radio" name="figure">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radio-container">Empresa de economía mixta
+                            <label class="radio-container label1">Empresa de economía mixta
                                 <input type="radio" name="figure">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radio-container">Empresa de economía popular y solidaria
+                            <label class="radio-container label1">Empresa de economía popular y solidaria
                                 <input type="radio" name="figure">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radio-container">Otro
+                            <label class="radio-container label1">Otro
                                 <input type="radio" name="figure">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
                     </div>
                 </div>
-                <div class="form-group-2">
-                    <h3>How would you like to bo located ?</h3>
-                    <div class="select-list">
-                        <select name="confirm_type" id="confirm_type">
-                            <option seleected value="">By phone</option>
-                            <option value="by_email">By email</option>
-                        </select>
-                    </div>
-                    <div class="select-list">
-                        <select name="hour_appointment" id="hour_appointment">
-                            <option seleected value="">Hours : 8am 10pm</option>
-                            <option value="9h-11h">Hours : 9am 11pm</option>
-                        </select>
-                    </div>
-                </div>
+                
                 <div class="form-check">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>Estoy de acuerdo con los  <a href="#" class="term-service">Términos y Condiciones</a></label>
                 </div>
-                <div class="form-submit">
-                    <input type="submit" name="submit" id="submit" class="submit" value="Registrar" />
+                <div id="cntBoton" class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submitbtn" value="Registrar" />
                 </div>
             </form>
         </div>
-
     </div>
-
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+    </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
