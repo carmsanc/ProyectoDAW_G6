@@ -1212,7 +1212,7 @@ div#preloader {
 ----------------------------------------*/
 
 .testimonials-area {
-  background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top / cover;
+  background: rgba(0, 0, 0, 0) url("../img/us.jpg") no-repeat fixed center top / cover;
   height: auto;
   width: 100%;
 }
@@ -1732,7 +1732,7 @@ div#preloader {
 /*----------------------------------------*/
 
 .header-bg {
-  background: url(../img/slider/slider1.jpg);
+  background: url(../img/slider/slider3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
