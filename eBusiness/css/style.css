@@ -812,7 +812,12 @@ div#preloader {
   position: relative;
   overflow: hidden;
 }
-
+.fotos{
+    height: 200px;
+    weight: 300px;
+    padding-top:  10px;
+    border-radius: 0%;
+}
 .team-member::before {
   background: rgba(0, 0, 0, 0) url("../img/team/team01.jpg") repeat scroll 0 0;
   content: "";

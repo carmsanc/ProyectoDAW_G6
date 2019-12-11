@@ -11,7 +11,7 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/registroStyle.css">
-  
+
 
 </head>
 <body>
@@ -21,7 +21,7 @@
         <div class="container">
             <form method="POST" class="appointment-form" id="appointment-form">
                 <a href="index.html"><img src="img/logo.png" alt="logo" title="Startelp">   </a>
-                <h2>Registro de Inversionista</h2>
+                <h2 id="titulo">Registro de Inversionista</h2>
                 <div class="form-group-1">
                     <input type="text" name="name" id="name" placeholder="Nombre del completo" required />
                     <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
@@ -47,8 +47,8 @@
                                 <span class="checkmark"></span>
                             </label>
                             </div>
-                        </div>          
-                  	
+                        </div>
+
                     <div class="input-group">
                         <label class="label">¿Qué tipo de financiamiento ha facilitado?*</label>
                         <div class="p-t-10">
@@ -81,8 +81,8 @@
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                    </div>                
-                    
+                    </div>
+
                     <div class="select-list">
                     	<h3>¿En qué sector económico estaría interesado en invertir/financiar? </h3>
                         <select name="inversion_type" id="inversion_type">
@@ -95,7 +95,7 @@
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term"><span><span></span></span>Estoy de acuerdo con los  <a href="#" class="term-service">Términos y condiciones</a></label>
                 </div>
-                <div class="form-submit">
+                <div id="cntBoton" class="form-submit">
                     <input type="submit" name="submit" id="submit" class="submit" value="Registrar" />
                 </div>
             </form>
