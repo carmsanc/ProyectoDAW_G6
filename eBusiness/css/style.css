@@ -2382,12 +2382,12 @@ span.email-notes {
 
 /*ESTILO PARA HOJA DE REGISTRO*/
 .main {
-  padding: 100px 0;
-  position: relative; }
+  padding: 100px 0px 0px 0px;
+  position: static; }
 .container1 {
   width: 586px;
   background: #fff;
-  margin-left: 165px;
+  margin-left: 345px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -2532,8 +2532,6 @@ span.email-notes {
   font-size: 14px;
   line-height: 1.8;
   color: #fff;
-  background-image: url('../img/background/bg4.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
