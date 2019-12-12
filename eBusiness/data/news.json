@@ -1,0 +1,23 @@
+[{"Titulo": "Nueva sección de categorías",
+  "Descripcion": "Ahora los inversionistas podrán realizar la búsqueda de las startups que le interesan de manera mucho más ágil y eficiente, por medio de la nueva sección de categorías.",
+  "Img": "img/blog/categorias_screen.png",
+  "url": "blog-details.html"
+},
+{"Titulo": "Feria dinamizó movimiento comercial en la 9 de Octubre",
+  "Descripcion": "La peatonalización de la avenida 9 de Octubre, entre las calles Boyacá y Pedro Carbo, fue un espacio aprovechado por más de 80 emprendedores.",
+  "Img": "https://www.eluniverso.com/sites/default/files/styles/powgallery_1280/public/fotos/2019/12/19308376.jpg?itok=Qd60fMDx",
+  "url": "https://www.eluniverso.com/guayaquil/2019/12/09/nota/7639328/feria-dinamizo-movimiento-comercial-9-octubre"
+},
+{"Titulo": "El Grand Bazaar, una feria para los emprendimientos",
+  "Descripcion": "Unos cien expositores son parte de una plataforma que impulsará su proyección empresarial. El Grand Bazaar se inició en Quito hace nueve años y ahora llegó hasta el complejo deportivo de la UEES, con precios que van desde los $10 hasta los $1200.",  
+  "Img": "https://www.eluniverso.com/sites/default/files/styles/powgallery_1280/public/fotos/2019/11/19229935.jpg?itok=ZqxWU7O1",
+  "url": "https://www.eluniverso.com/entretenimiento/2019/12/01/nota/7628780/grand-bazaar-feria-emprendimientos"
+},
+
+{"Titulo": "Créditos de desarrollo humano impulsan más emprendimientos en el Ecuador",
+  "Descripcion": "Superar la línea de pobreza y mejorar los ingresos a través de emprendimientos es la meta de 1975 familias de Chimborazo, que en lo que va de este año recibieron el bono de desarrollo humano.",  
+  "Img": "https://www.elcomercio.com/files/article_main/uploads/2019/11/22/5dd8948a58c55.jpeg",
+  "url": "https://www.elcomercio.com/actualidad/creditos-desarrollo-humano-emprendimientos-ecuador.html"
+}
+
+]
