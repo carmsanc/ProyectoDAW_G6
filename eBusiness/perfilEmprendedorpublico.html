@@ -29,38 +29,39 @@
       <link href="css/responsive.css" rel="stylesheet">
     </head>
     <body data-spy="scroll" data-target="#navbar-example">
-      <!-- header-area start -->
-      <div id="sticker" class="header-area" >
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <!-- Navigation -->
-              <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+      <header>
+  <div id="sticker" class="header-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+
+          <!-- Navigation -->
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                   </button>
-                  <!-- Brand -->
-                  <a class="navbar-brand page-scroll sticky-logo" href="index2.html">
-                    <h1 >Startelp</h1>
-                    <!-- Uncomment below if you prefer to use an image logo
-                    <img src="img/logo.png" alt="" title="">-->
-                  </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                      <a class="page-scroll" href="index2.html">Inicio</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="perfilEmprendedor.html">Perfil</a>
-                    </li>
-                    <li>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="index2.html">
+                  <h1>Startelp</h1>
+                  <!-- Uncomment below if you prefer to use an image logo
+                   <img src="img/logo.png" alt="" title="">-->
+                </a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="inversionista.html">Inicio</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="perfilIversionistapublico.html">Perfil</a>
+                  </li>
+                  <li>
                     <a class="page-scroll" href="index.html">Cerrar Sesión</a>
                   </li>
                 </ul>
@@ -75,6 +76,7 @@
     <!-- header-area end -->
   </header>
   <!-- header end -->
+  <!-- header end -->
   <section id="startupPR" class="blog-area area-padding">
     <div class="container emp-profile">
       <form method="post">
@@ -82,10 +84,7 @@
           <div class="col-md-4">
             <div class="profile-img">
               <img src="img/portfolio/1.jpg" alt=""/>
-              <div class="file btn btn-lg btn-primary">
-                Cambiar foto
-                <input type="file" name="file"/>
-              </div>
+
             </div>
           </div>
           <div class="col-md-6">
@@ -97,11 +96,18 @@
               Área del negocio
               </h6>
               <section class="d-flex mt-5">
-                <button class="btn btn-light bg-transparent mr-3 mb-3">
-                
-                Editar Perfil
+                <button class=" btn btn-light bg-transparent mr-3 mb-3">
+                <i class="fa fa-comments"></i>
+                Contactar por mensaje
                 </button>
-                
+                <button class="btn btn-light bg-transparent mr-3 mb-3">
+                <i class="fa fa-warning"></i>
+                Reportar usuario
+                </button>
+                <button class="btn btn-primary mb-3">
+                <i class="fa fa-check"></i>
+                Invertir
+                </button>
               </section>
               <p class="proile-rating">Calificación : </p>
               <div class="d-flex align-items-center">
@@ -116,9 +122,6 @@
               </ul>
 
             </div>
-          </div>
-          <div class="col-md-2">
-            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Editar Perfil"/>
           </div>
 
         </div>
