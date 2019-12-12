@@ -1,0 +1,34 @@
+[{"Nombre Startup":"Cafetería Buozzi 42",
+  "subTit": "Monto requerido de inversió",
+ "Monto":"$1005",
+ "Description":"Restaurantes"
+ },
+ {
+ "Nombre Startup":"Ferrauto",
+ "subTit": "Monto requerido de inversió",
+ "Monto":"$2055",
+ "Description":"Startup dedicado a la fotografía"
+ },
+
+ {
+ "Nombre Startup":"Iverno",
+ "subTit": "Monto requerido de inversió",
+ "Monto":"$20055",
+ "Description":"Startup dedicado al Web Design",
+ "foto": "img/portfolio/1.jpg"
+ },
+
+ {
+ "Nombre Startup":"bambooSmile",
+ "subTit": "Monto requerido de inversió",
+ "Monto":"$1350",
+ "Description":"Startup dedicado a restaurantes"
+ },
+ {
+ "Nombre Startup":"Oki Ecologic",
+ "subTit": "Monto requerido de inversió",
+ "Monto":"$34455",
+ "Description":"Startup dedicado a la higene de manera ecológica"
+ }
+
+]
