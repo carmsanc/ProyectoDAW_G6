@@ -40,6 +40,10 @@ html, body {
   height: 100%;
 }
 
+.titu >*{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .floatleft {
   float: left;
 }
@@ -84,14 +88,14 @@ p {
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, #span {
   font-family: 'Raleway', sans-serif;
   margin: 0 0 15px;
   color: #444;
   font-weight: 500;
 }
 
-h1 {
+h1,#span {
   font-size: 48px;
   line-height: 50px;
 }
@@ -411,7 +415,7 @@ div#preloader {
   display: block;
 }
 
-.sticky-logo h1 {
+.sticky-logo h1,#span {
   color: #fff;
   padding: 0;
   margin: 0;
@@ -420,7 +424,7 @@ div#preloader {
   line-height: 1;
 }
 
-.sticky-logo h1 span {
+.sticky-logo h1 #span {
   color: #3ec1d5;
 }
 .stick .main-menu ul.navbar-nav li.active > a::after {
