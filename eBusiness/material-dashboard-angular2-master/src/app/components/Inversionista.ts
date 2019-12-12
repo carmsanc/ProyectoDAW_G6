@@ -39,6 +39,9 @@ export class Inversionista {
     <td>
         ${this.financiamiento}
     </td>
+    <td>
+        <button type="button" class="btn btn-default">Editar</button>
+    </td>
 </tr>`
   }
 }

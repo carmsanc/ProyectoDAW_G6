@@ -39,6 +39,9 @@ export class Startup {
     <td>
         ${this.direccion}
     </td>
+    <td>
+        <button type="button" class="btn btn-default">Editar</button>
+    </td>
 </tr>`
   }
 }

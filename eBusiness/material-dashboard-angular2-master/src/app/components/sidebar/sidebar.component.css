@@ -1,0 +1,16 @@
+.sticky-logo h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    background-color: black;
+  }
+  
+  .sticky-logo h1 span {
+    color: #3ec1d5;
+  }
+
+  

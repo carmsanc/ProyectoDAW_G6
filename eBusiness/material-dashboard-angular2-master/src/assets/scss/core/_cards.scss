@@ -183,7 +183,7 @@
     &.bg-success,
     &.card-rotate.bg-success .front,
     &.card-rotate.bg-success .back{
-      background: linear-gradient(60deg, $green-400, $green-600);
+      background: linear-gradient(60deg, $gray-color, $gray-color);
     }
     .card-header-warning .card-icon,
     .card-header-warning .card-text,
@@ -199,7 +199,7 @@
     &.bg-danger,
     &.card-rotate.bg-danger .front,
     &.card-rotate.bg-danger .back{
-      background: linear-gradient(60deg, #777799, $red-600);
+      background: linear-gradient(60deg, #B0B0B0, #B0B0B0);
     }
 
     .card-header-rose .card-icon,
@@ -213,41 +213,42 @@
 
     .card-header-primary .card-icon,
     .card-header-primary:not(.card-header-icon):not(.card-header-text),
-    .card-header-primary .card-text{
-        @include shadow-big-color($brand-primary);
+    // .card-header-primary .card-text{
+    //     @include shadow-big-color($brand-primary);
 
-        //@include shadow-8dp-color($brand-primary);
-        //@include shadow-16dp-color($brand-primary);
-    }
+    //     //@include shadow-8dp-color($brand-primary);
+    //     //@include shadow-16dp-color($brand-primary);
+    // }
     .card-header-danger .card-icon,
     .card-header-danger:not(.card-header-icon):not(.card-header-text),
     .card-header-danger .card-text{
-        @include shadow-big-color($brand-danger);
+      box-shadow: none !important;
+        // @include shadow-big-color($brand-danger);
     }
 
     .card-header-rose .card-icon,
     .card-header-rose:not(.card-header-icon):not(.card-header-text),
-    .card-header-rose .card-text{
-        @include shadow-big-color($brand-rose);
-    }
+    // .card-header-rose .card-text{
+    //     @include shadow-big-color($brand-rose);
+    // }
 
     .card-header-warning .card-icon,
     .card-header-warning:not(.card-header-icon):not(.card-header-text),
-    .card-header-warning .card-text{
-        @include shadow-big-color($brand-warning);
-    }
+    // .card-header-warning .card-text{
+    //     @include shadow-big-color($brand-warning);
+    // }
 
     .card-header-info .card-icon,
     .card-header-info:not(.card-header-icon):not(.card-header-text),
-    .card-header-info .card-text{
-        @include shadow-big-color($brand-info);
-    }
+    // .card-header-info .card-text{
+    //     @include shadow-big-color($brand-info);
+    // }
 
     .card-header-success .card-icon,
     .card-header-success:not(.card-header-icon):not(.card-header-text),
-    .card-header-success .card-text{
-        @include shadow-big-color($brand-success);
-    }
+    // .card-header-success .card-text{
+    //     @include shadow-big-color($light-blue-600);
+    // }
 
     [class*="card-header-"],
     &[class*="bg-"]{

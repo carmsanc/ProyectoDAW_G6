@@ -41,7 +41,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -356,7 +356,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -3455,6 +3455,7 @@ tbody.collapse.show {
   display: block; }
 
 .navbar {
+  background-color: black;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3470,6 +3471,7 @@ tbody.collapse.show {
   padding: 0.5rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
+    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3860,6 +3862,7 @@ tbody.collapse.show {
   padding: 1.25rem; }
 
 .card-title {
+  font-weight: bold;
   margin-bottom: 0.75rem; }
 
 .card-subtitle {
@@ -3876,6 +3879,7 @@ tbody.collapse.show {
   margin-left: 1.25rem; }
 
 .card-header {
+  background-color: gray;
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: #fff;
@@ -8746,7 +8750,7 @@ button:focus {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
   .card .card-category:not([class*="text-"]) {
-    color: #999999; }
+    color: white; }
   .card .card-category {
     margin-top: 10px; }
     .card .card-category .material-icons {
@@ -8756,6 +8760,7 @@ button:focus {
   .card .form-check {
     margin-top: 15px; }
   .card .card-title {
+    color: white;
     margin-top: 0.625rem; }
     .card .card-title:last-child {
       margin-bottom: 0; }
@@ -8866,7 +8871,7 @@ button:focus {
   .card .card-header-success:not(.card-header-icon):not(.card-header-text), .card.bg-success,
   .card.card-rotate.bg-success .front,
   .card.card-rotate.bg-success .back {
-    background: linear-gradient(60deg, #66bb6a, #43a047); }
+    background: linear-gradient(60deg, gray, gray); }
   .card .card-header-warning .card-icon,
   .card .card-header-warning .card-text,
   .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card.bg-warning,
@@ -8892,9 +8897,9 @@ button:focus {
             box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4); }
   .card .card-header-danger .card-icon,
   .card .card-header-danger:not(.card-header-icon):not(.card-header-text),
-  .card .card-header-danger .card-text {
+  /* .card .card-header-danger .card-text {
     -webkit-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4);
-            box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4); }
+            box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4); } */
   .card .card-header-rose .card-icon,
   .card .card-header-rose:not(.card-header-icon):not(.card-header-text),
   .card .card-header-rose .card-text {
@@ -12984,6 +12989,7 @@ h2.title {
       background: #FFFFFF;
       opacity: .93; }
   .sidebar .logo {
+    background-color:black;
     padding: 15px 0px;
     margin: 0;
     display: block;

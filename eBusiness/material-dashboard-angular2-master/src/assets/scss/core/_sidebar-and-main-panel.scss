@@ -239,6 +239,7 @@
     }
 
     .logo{
+        background-color: black;
         padding: 15px 0px;
         margin: 0;
         display: block;
@@ -316,7 +317,7 @@
         @include set-background-color-button($brand-warning);
     }
     &[data-color="danger"]{
-        @include set-background-color-button($brand-danger);
+        @include set-background-color-button(#3EC1D5);
     }
     &[data-color="rose"]{
         @include set-background-color-button($brand-rose);
@@ -327,8 +328,8 @@
         @include sidebar-active-color($black-color);
     }
 
-    &[data-background-color="red"]{
-        @include sidebar-background-color($brand-danger, $white-color);
+    &[data-background-color="black"]{
+        @include sidebar-background-color($black-color, $white-color);
 
         .user,
         .logo,
@@ -385,6 +386,7 @@
     }
 
      .navbar{
+        //  background-color: black;
         margin-bottom: 0;
     }
 

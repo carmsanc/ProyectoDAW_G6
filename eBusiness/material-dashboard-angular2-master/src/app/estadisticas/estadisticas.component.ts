@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estadisticas.component.scss']
 })
 export class EstadisticasComponent implements OnInit {
-  title = 'Browser market shares at a specific website, 2014';
+  title = 'Categorias de Emprendimientos, 2019';
    type = 'ColumnChart';
    data = [
       ['Alimentacion', 45.0,'silver'],
@@ -19,8 +19,8 @@ export class EstadisticasComponent implements OnInit {
    columnNames = ['Browser','Percent',{role: 'style'}];
    options = {legend: { position: "none" }
    };
-   width = 550;
-   height = 400;
+  //  width = 750;
+  //  height = 600;
   // public nameBar = '/app/assets/data/sectorCatTotal.csv'
   // public csvFile:CsvFile;
   public dataBar:any;
