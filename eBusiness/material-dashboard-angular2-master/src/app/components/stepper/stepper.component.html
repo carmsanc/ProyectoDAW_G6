@@ -1,0 +1,48 @@
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Activar ingreso obligatorio' : 'Desactivar ingreso obligatorio'}}
+</button>
+<mat-vertical-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Ingresa tu nombre</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Nombre y Apellido" formControlName="firstCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Ingresa tu correo</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Correo Electronico" formControlName="secondCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <ng-template matStepLabel>Monto requerido</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Monto en dolares" formControlName="thirdCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Listo</ng-template>
+    Registro exitoso.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-vertical-stepper>
