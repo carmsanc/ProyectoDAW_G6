@@ -1,0 +1,73 @@
+<div id="header" class="nav-collapse nav-solid">
+  <div class="row clearfix">
+    <div class="col-1">
+
+      <!--Logo-->
+      <div id="logo">
+
+        <!--Logo that is shown on the banner-->
+        <img src="assets/images/logo.png" id="banner-logo" alt="Landing Page" />
+        <!--End of Banner Logo-->
+
+        <!--The Logo that is shown on the sticky Navigation Bar-->
+        <!-- <img src="assets/images/logo-2.png" id="navigation-logo" alt="Landing Page" /> -->
+        <a class="navbar-brand page-scroll sticky-logo">
+          <h1 id="span">Startelp</h1>
+        </a>
+        <!--End of Navigation Logo-->
+
+      </div>
+      <!--End of Logo-->
+
+      <aside>
+
+        <app-social></app-social>
+
+      </aside>
+
+      <!--Main Navigation-->
+      <nav class= "collapse navbar-collapse" id="nav-main">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a routerLink="/Home" (click)="getActiveTab('home')" [class.active]="activetab === 'home'">Home</a>
+          </li>
+          <li>
+            <a routerLink="/About" (click)="getActiveTab('about')" [class.active]="activetab === 'about'">Nosotros</a>
+          </li>
+          <!-- <li>
+            <a routerLink="/Gallery" (click)="getActiveTab('gallery')" [class.active]="activetab === 'gallery'">Gallery</a>
+          </li> -->
+          <li>
+            <a routerLink="/Services" (click)="getActiveTab('services')" [class.active]="activetab === 'services'">¿Qué hacemos?</a>
+          </li>
+          <li>
+            <a routerLink="/Team" (click)="getActiveTab('team')" [class.active]="activetab === 'team'">Equipo</a>
+          </li>
+          <!-- <li>
+            <a routerLink="/Clients" (click)="getActiveTab('clients')" [class.active]="activetab === 'clients'">Clients</a>
+          </li>
+          <li>
+            <a routerLink="/Pricing" (click)="getActiveTab('pricing')" [class.active]="activetab === 'pricing'">Pricing</a>
+          </li> -->
+          <li>
+            <a routerLink="/Noticias" (click)="getActiveTab('noticias')" [class.active]="activetab === 'noticias'">Noticias</a>
+          </li>
+          <li>
+            <a routerLink="/Contacto" (click)="getActiveTab('contacto')" [class.active]="activetab === 'contacto'">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <!--End of Main Navigation-->
+      <div id="nav-trigger"><span>
+        
+      </span>
+      <nav id="nav-mobile">
+          
+    </nav>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+<!--End of Header-->
