@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
 import { UserService } from 'src/app/user.service';
+import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,9 @@ import { UserService } from 'src/app/user.service';
 })
 export class LoginComponent implements OnInit {
 
-  input; 
+  input;
+  private router: Router;
+ 
  
   constructor(private userService: UserService ) { }
 
@@ -29,6 +32,7 @@ export class LoginComponent implements OnInit {
       response => {
         console.log(response);
         alert('User: ' + this.input.username + ' ingreso correctamente');
+        this.router.navigate(['/Perfil']);
       },
       error => {
         console.log('error',error);
@@ -37,4 +41,6 @@ export class LoginComponent implements OnInit {
       
     )
   }
+
+  
 }

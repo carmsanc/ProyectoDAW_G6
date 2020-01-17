@@ -14,7 +14,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { SignupComponent } from './signup/signup.component';
-import { RoutegaurdService } from './routegaurd.service'
+import { RoutegaurdService } from './routegaurd.service';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -33,8 +34,7 @@ const routes: Routes = [
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
-  { path: '**', redirectTo:"/404"}
-
+  { path: 'Perfil', component: ProfileComponent}
 ];
 
 @NgModule({

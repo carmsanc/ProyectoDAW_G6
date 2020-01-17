@@ -24,6 +24,7 @@ import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http';
     PaginationComponent,
     LoginComponent,
     ContactusComponent,
-    SignupComponent
+    SignupComponent,
+    ProfileComponent
     ],
   imports: [
     BrowserModule,
