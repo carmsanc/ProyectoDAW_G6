@@ -7,17 +7,15 @@
           <div class="panel-body">
           <h4 class="text-center"><i class="ion-log-in"></i> Iniciar Sesión</h4>
   
-          <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+          <form >
             <div class="form-group">
-              <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
-              <span class="ion-at form-control-icon"></span> 
+              <input [(ngModel)] = "input.username" placeholder="Username" name="user">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control input-lg" name="password" placeholder="Password" formControlName="password">
-                <span class="ion-key form-control-icon"></span> 
+              <input [(ngModel)] = "input.password" type="password" placeholder="Password" name="pass">
             </div>
   
-            <button type="submit" class="btn btn-block btn-success"> Iniciar Sesión</button>
+            <button type="submit" class="btn btn-block btn-success" (click)="onLogin()"> Iniciar Sesión</button>
   
             <p class="text-center">
               <small>¿No tienes cuenta? <a routerLink="/Registro">Sign up</a></small>

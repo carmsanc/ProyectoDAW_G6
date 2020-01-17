@@ -6,6 +6,7 @@ import { FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
 import { environment } from './../environments/environment';
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -25,5 +26,7 @@ export class ConfigService {
       return this.config.blog.posts[id - 1];
 
   }
+
+  
 
 }

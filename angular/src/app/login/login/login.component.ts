@@ -1,27 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
+import { UserService } from 'src/app/user.service';
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  providers: [UserService]
 })
 export class LoginComponent implements OnInit {
 
-  loginForm: FormGroup;
-
-  constructor(private fb: FormBuilder) { }
+  input; 
+ 
+  constructor(private userService: UserService ) { }
 
   ngOnInit() {
-    this.loginForm = this.fb.group({
-      'email': [null, Validators.required, Validators.email],
-      'password': [null, Validators.required],
-
-
-    });
+    this.input ={
+      username: '',
+      password: ''
+    };
   }
 
-  login(formData: NgForm){
-    console.log(formData)
+ 
+  onLogin(){
+    this.userService.loginUser(this.input).subscribe(
+      
+      response => {
+        console.log(response);
+        alert('User: ' + this.input.username + ' ingreso correctamente');
+      },
+      error => {
+        console.log('error',error);
+      }
+
+      
+    )
   }
 }
