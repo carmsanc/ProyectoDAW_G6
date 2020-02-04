@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { UserService as AuthGuard} from './user.service'
 
 import { IntroComponent } from './intro/intro.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -34,7 +35,7 @@ const routes: Routes = [
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
-  { path: 'Perfil', component: ProfileComponent}
+  { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

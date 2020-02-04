@@ -9,5 +9,6 @@ router.register(r'users',views.UserViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
-    url(r'^auth/', ObtainAuthToken.as_view())       
+    url(r'^auth/', ObtainAuthToken.as_view())
+    
 ]

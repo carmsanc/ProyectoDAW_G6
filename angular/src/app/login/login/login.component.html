@@ -15,7 +15,7 @@
               <input [(ngModel)] = "input.password" type="password" placeholder="Password" name="pass">
             </div>
   
-            <button type="submit" class="btn btn-block btn-success" routerLink="/Perfil" (click)="onLogin()"> Iniciar Sesión</button>
+            <button type="submit" class="btn btn-block btn-success" (click)="onLogin()"> Iniciar Sesión</button>
   
             <p class="text-center">
               <small>¿No tienes cuenta? <a routerLink="/Registro">Sign up</a></small>

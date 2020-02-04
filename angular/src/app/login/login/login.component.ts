@@ -13,10 +13,9 @@ import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from
 export class LoginComponent implements OnInit {
 
   input;
-  private router: Router;
  
  
-  constructor(private userService: UserService ) { }
+  constructor(private userService: UserService, private router: Router ) { }
 
   ngOnInit() {
     this.input ={
@@ -32,9 +31,10 @@ export class LoginComponent implements OnInit {
       response => {
         console.log(response);
         alert('User: ' + this.input.username + ' ingreso correctamente');
-        this.router.navigate(['/Perfil']);
+        this.router.navigate(["/Perfil"]);
       },
       error => {
+        alert('Credenciales incorrectas.')
         console.log('error',error);
       }
 
