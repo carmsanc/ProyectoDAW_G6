@@ -35,7 +35,7 @@ const routes: Routes = [
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
-  { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]}
+  { path: 'Perfil', component: ProfileComponent}
 ];
 
 @NgModule({
