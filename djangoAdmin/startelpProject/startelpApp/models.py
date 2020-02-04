@@ -6,19 +6,6 @@ from django.contrib.auth.models import User
 # Create your models here.
 User = get_user_model()
 
-class NivelEstudios(models.Model):
-    nombreNivel = models.CharField(max_length=20)
-    def __str__(self):
-        return self.nombreNivel
-
-class Persona(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    cedulaActor = models.CharField(max_length=10,primary_key=True)
-    nivelEstudios = models.ForeignKey(NivelEstudios, on_delete=models.CASCADE)
-    telefono = models.CharField(max_length=10)
-    def __str__(self):
-        return f'{self.user.first_name} {self.user.last_name}'
-
 
 class tipoFinanciamiento(models.Model):
     nombreFinanc = models.CharField(max_length=50)
@@ -26,13 +13,13 @@ class tipoFinanciamiento(models.Model):
         return self.nombreFinanc
 
 class tblInversionista(models.Model):
-    persona = models.ForeignKey(Persona, on_delete=models.CASCADE)
+    persona = models.ForeignKey(User, on_delete=models.CASCADE)
     direccion = models.CharField(max_length=200)
     experienciaInversion = models.BooleanField()
     financiamiento = models.ForeignKey(tipoFinanciamiento, on_delete = models.CASCADE)
 
 class tblStartup(models.Model):
-    persona = models.ForeignKey(Persona, on_delete=models.CASCADE)
+    persona = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class tblCategoria(models.Model):
     nombreCategoria = models.CharField(max_length=50)

@@ -10,14 +10,11 @@
 
             <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value)">
               <div class="form-group">
-                <input type="text" class="form-control form-names input-lg" formControlName="firstName" name="firstName"
-                  placeholder="First Name">
+                <input type="text" class="form-control form-names input-lg" formControlName="username" name="firstName"
+                  placeholder="Username">
                 <span class="ion-person form-control-icon"></span>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control form-names input-lg" formControlName="lastName" name="lastName"
-                  placeholder="Last name">
-              </div>
+              
               <div class="form-group">
                 <input type="text" class="form-control input-lg" formControlName="email" name="email"
                   placeholder="Email">
@@ -27,6 +24,18 @@
                 <input type="password" class="form-control input-lg" formControlName="password" name="password"
                   placeholder="Password">
                 <span class="ion-key form-control-icon"></span>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-names input-lg" formControlName="direccion" name="direccion"
+                  placeholder="Direccion">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-names input-lg" formControlName="tipof" name="tipof"
+                  placeholder="Tipo financiamiento">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-names input-lg" formControlName="experiencia" name="experiencia"
+                  placeholder="Años experiencia">
               </div>
 
               <button type="submit" class="btn btn-block btn-success"(click)="signup()"> Sign up</button>
