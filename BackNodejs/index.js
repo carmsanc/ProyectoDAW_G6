@@ -1,6 +1,9 @@
 require('./config/config')
 require('./config/passportConfig')
 require('./models/db')
+const nodemailer = require("nodemailer");
+const configMensaje = require('./configMensaje');
+
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -27,10 +30,7 @@ app.use((err, req, res, next) => {
     }
 })
 
-app.post('/formulario', (req, res) => {
-    configMensaje(req.body);
-    res.status(200).send();
-  })
+
 
 //start server
 app.listen(process.env.PORT, () => console.log('Server started at port: ' + process.env.PORT))

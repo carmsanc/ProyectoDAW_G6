@@ -24,6 +24,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { AlertModule } from "./components/shared/components/alert/alert.module";
 import { TokenService } from './core/token/token.service';
 import { AuthInterceptor } from './core/auth/auth.interceptor';
+import { MessageService } from './services/message.service';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { AuthInterceptor } from './core/auth/auth.interceptor';
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
-  }],
+  },
+  MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

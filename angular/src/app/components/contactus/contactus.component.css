@@ -1,8 +1,10 @@
 .container{
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0;
+    margin-left: 50px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 90px;
+    display: block ;
     
 }
 section{

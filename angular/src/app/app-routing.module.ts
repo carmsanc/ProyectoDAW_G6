@@ -1,11 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IntroComponent } from './components/intro/intro.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContentComponent } from './components/content/content.component';
 import { TeamComponent } from './components/team/team.component';
-import { ClientsComponent } from './components/clients/clients.component';
-import { PricingComponent } from './components/pricing/pricing.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BlogComponent } from './components/blog/blog.component';
 import {ArticleComponent} from './components/article/article.component';

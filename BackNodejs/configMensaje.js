@@ -4,8 +4,8 @@ module.exports = (formulario) => {
  var transporter = nodemailer.createTransport({
  service: 'gmail',
  auth: {
- user: 'startelp.daw@gmail.com', // Cambialo por tu email
- pass: 'startelp2020' // Cambialo por tu password
+ user: 'startelp.daw@gmail.com', 
+ pass: 'startelp2020' 
  }
  });
 
@@ -16,7 +16,7 @@ module.exports = (formulario) => {
     subject: 'Nuevo formulario de contacto',
     html: `
     <strong>Nombre:</strong> ${formulario.nombre} <br/>
-    <strong>E-mail:</strong> ${formulario.email}  <br/>
+    <strong>Asunto:</strong> ${formulario.asunto}  <br/>
     <strong>Mensaje:</strong> ${formulario.mensaje}
     `
   };
