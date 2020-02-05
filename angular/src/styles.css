@@ -652,7 +652,7 @@ nav#nav-mobile li:last-child {
 nav#nav-mobile a {
     display: block;
     padding: 12px 0;
-    color: rgb(13, 92, 88);
+    color: rgb(2, 34, 65);
     width: 100%;
     height: auto;
     line-height: normal;
@@ -1394,7 +1394,7 @@ blockquote {
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
-    color: #fff;
+    color: rgb(11, 90, 126);
 }
 
 #clients img {
@@ -2582,22 +2582,25 @@ h6 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:14px;
     font-weight:bold;
-    color:#111;
+    color:rgb(240, 230, 230);
 }
 
 
 /* Button Color */
 
 .button, input[type="submit"] {
-    border-color:#111;
+    background-color: rgb(27, 173, 192);
+    border-radius: 25px;
+    border-color: rgb(27, 173, 192);
+    
 }
 
 
 /* Button Hover Color */
 
 .button:hover,  input[type="submit"]:hover {
-    border-color:#56d1da;
-    color: #56d1da;
+    border-color:#101111;
+    color: #060707;
 }
 
 

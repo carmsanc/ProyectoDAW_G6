@@ -22,12 +22,13 @@ const routes: Routes = [
   { path: 'Services', component: ContentComponent },
   { path: 'Team', component: TeamComponent },
   { path: 'Login', component: LoginComponent },
-  { path: 'Contacto', component: ContactusComponent },
+  { path: 'Contacto', component: ContactusComponent,canActivate: [AuthGuard] },
   { path: 'Registro', component: SignupComponent },
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
-  { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]}
+  { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]},
+  { path:'**', redirectTo: '/Login', pathMatch: 'full'},
 ];
 
 @NgModule({
