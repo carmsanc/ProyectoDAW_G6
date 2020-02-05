@@ -1,0 +1,82 @@
+<!--Profile Section-->
+<section>
+    <div id="profile" class="scrollto clearfix">
+        <div class="row no-padding-bottom clearfix">
+            <!--Content Left Side-->
+            <div class="col-3">
+                <div class="row profile-work">
+                    <div class="profile-img">
+                        <img src="https://image.freepik.com/vector-gratis/perfil-avatar-hombre-icono-redondo_24640-14044.jpg"
+                            alt="" />
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="button">
+                            Editar Perfil <i class="fa fa-edit"></i>
+                        </a>
+                        <a href="#" class="button">
+                            Ver favoritos <i class="fa fa-star"></i>
+                        </a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <!--End Content Left Side-->
+
+            <!--Content of the Right Side-->
+            <div class="col-3">
+                <div class="section-heading">
+                    <h3>Perfil de Usuario</h3>
+                    <h2 class="section-title">{{userProfileDetails?.fullName}}</h2>
+                    <h1 class="section-subtitle">Información Personal</h1>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="dataname">Teléfono celular: </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="data">{{userProfileDetails?.telefono}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="dataname">Correo personal: </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="data">{{userProfileDetails?.email}}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="dataname">Tipo financiamiento: </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="data">{{userProfileDetails?.tipof}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p id="dataname">Experiencia en invertir: </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="data">{{userProfileDetails?.experiencia}}</p>
+                    </div>
+                </div>
+            </div>
+            <!--End Content Right Side-->
+
+            <div class="col-3">
+                <div class="profile-work">
+                    <button (click)="logout()" type="button" class="button" style="position: absolute; top: .8em; left: 80%">Logout</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!--End of Content Section-->

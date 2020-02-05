@@ -3,39 +3,35 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IntroComponent } from './intro/intro.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { ContentComponent } from './content/content.component';
-import { TeamComponent } from './team/team.component';
-import { ClientsComponent } from './clients/clients.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { SocialComponent } from './social/social.component';
-import { BlogComponent } from './blog/blog.component';
-import { PostComponent } from './post/post.component';
-import { ArticleComponent } from './article/article.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { PaginationComponent } from './pagination/pagination.component';
-import { LoginComponent } from './login/login/login.component';
-import { ContactusComponent } from './contactus/contactus.component';
-import { SignupComponent } from './signup/signup.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { ContentComponent } from './components/content/content.component';
+import { TeamComponent } from './components/team/team.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { SocialComponent } from './components/social/social.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { PostComponent } from './components/post/post.component';
+import { ArticleComponent } from './components/article/article.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { LoginComponent } from './components/login/login/login.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { ProfileComponent } from './profile/profile.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AlertModule } from "./components/shared/components/alert/alert.module";
+import { TokenService } from './core/token/token.service';
+import { AuthInterceptor } from './core/auth/auth.interceptor';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroComponent,
-    GalleryComponent,
     ContentComponent,
     TeamComponent,
-    ClientsComponent,
-    PricingComponent,
     FooterComponent,
     HeaderComponent,
     NavigationComponent,
@@ -44,7 +40,6 @@ import { ProfileComponent } from './profile/profile.component';
     PostComponent,
     ArticleComponent,
     NotfoundComponent,
-    PaginationComponent,
     LoginComponent,
     ContactusComponent,
     SignupComponent,
@@ -55,9 +50,14 @@ import { ProfileComponent } from './profile/profile.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AlertModule
   ],
-  providers: [],
+  providers: [TokenService, {
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

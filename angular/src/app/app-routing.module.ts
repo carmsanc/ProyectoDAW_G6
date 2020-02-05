@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UserService as AuthGuard} from './user.service'
-
-import { IntroComponent } from './intro/intro.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { ContentComponent } from './content/content.component';
-import { TeamComponent } from './team/team.component';
-import { ClientsComponent } from './clients/clients.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { HeaderComponent } from './header/header.component';
-import { BlogComponent } from './blog/blog.component';
-import {ArticleComponent} from './article/article.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { LoginComponent } from './login/login/login.component';
-import { ContactusComponent } from './contactus/contactus.component';
-import { SignupComponent } from './signup/signup.component';
-import { RoutegaurdService } from './routegaurd.service';
-import { ProfileComponent } from './profile/profile.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ContentComponent } from './components/content/content.component';
+import { TeamComponent } from './components/team/team.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BlogComponent } from './components/blog/blog.component';
+import {ArticleComponent} from './components/article/article.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { LoginComponent } from './components/login/login/login.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { AuthGuard } from './core/auth/auth.guard';
 
 
 
@@ -26,16 +24,13 @@ const routes: Routes = [
   { path: 'About', component: IntroComponent },
   { path: 'Services', component: ContentComponent },
   { path: 'Team', component: TeamComponent },
-  { path: 'Gallery', component: GalleryComponent },
-  { path: 'Clients', component: ClientsComponent },
-  { path: 'Pricing', component: PricingComponent },
   { path: 'Login', component: LoginComponent },
   { path: 'Contacto', component: ContactusComponent },
   { path: 'Registro', component: SignupComponent },
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
-  { path: 'Perfil', component: ProfileComponent}
+  { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
