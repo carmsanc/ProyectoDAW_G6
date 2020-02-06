@@ -1,11 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { FavoritosService } from "../../services/favoritos.service";
+import { UserService } from '../../core/user/user.service';
+import { UserModel } from '../../core/user/user.model';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-favoritos',
   templateUrl: './favoritos.component.html',
   styleUrls: ['./favoritos.component.css']
 })
 export class FavoritosComponent implements OnInit {
+  public userProfileDetails: UserModel
+
   favoritos = [{
     _id: 1,
     name: 'startup1',
@@ -25,15 +31,12 @@ export class FavoritosComponent implements OnInit {
 },
     
 ];
-  constructor(private taskService: FavoritosService) { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.taskService.getFavoritos()
-      .subscribe(
-        res => {
-          this.favoritos = res;
-        },
-        err => console.log(err)
-      )
+    this.userService.getUserProfile()
+    .subscribe((res: any) => {
+        this.userProfileDetails = res['user']
+    })
   }
 }

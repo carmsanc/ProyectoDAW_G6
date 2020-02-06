@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
-  { path: 'Favoritos', component: FavoritosComponent},
+  { path: 'Favoritos', component: FavoritosComponent, canActivate: [AuthGuard]},
   { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]},
   { path:'**', redirectTo: '/Login', pathMatch: 'full'},
   
