@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { StartupserviceService } from './startupservice.service';
 
 @NgModule({
   imports: [
@@ -31,7 +32,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     AdminLayoutComponent,
 
   ],
-  providers: [],
+  providers: [StartupserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

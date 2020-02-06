@@ -11,19 +11,25 @@ import { StartupserviceService } from '../startupservice.service';
 
 export class TableListComponent implements OnInit, AfterViewInit {
   startups: Startup[];
-  ngAfterViewInit(): void {
+  constructor(private startupService: StartupserviceService) {
     
+   }
+  ngAfterViewInit(): void {
+    this.startupService.getStartups().subscribe(
+      startups =>{console.log(startups);
+        this.startups=startups; 
+        for (let objeto of this.startups) {
+          console.log(objeto);
+          // let startup:Startup = new Startup(objeto["Nombre"], objeto['Visitas'],objeto["Categoria"],objeto["Direccion"])
+          // document.getElementById("tbStartup").innerHTML+=objeto.renderizarPlantilla();
+        }}
+    );
 //       fetch('./assets/data/startupsdata')
 // .then( response => response.json())
 // .then( data => {
 //   let arreglo = data.startups;
-      console.log(this.startups.length);
-  for (let objeto of this.startups) {
-    console.log(objeto['Nombre']);
-    let startup:Startup = new Startup(objeto["Nombre"], objeto['Visitas'],objeto["Categoria"],objeto["Direccion"])
-    document.getElementById("tbStartup").innerHTML+=startup.renderizarPlantilla();
-    
-  }
+      //console.log(this.startups.length);
+  
 // })
 // .catch(function(error) {
 //   console.log('Hubo un problema con la petición Fetch Startup:' + error.message);
@@ -46,9 +52,9 @@ fetch('./assets/data/inversionistasdata')
 });
   }
   
-  constructor(private startupService: StartupserviceService) { }
+  
 
-  ngOnInit() { this.startupService.getStartups().subscribe(
-    startups =>{this.startups=startups}
-  )}
+  ngOnInit() { 
+    
+    }
 }
