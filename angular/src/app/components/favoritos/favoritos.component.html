@@ -8,17 +8,20 @@
                 <button (click)="openDialog()" class="btn btn-primary">Añadir Lista</button>
             </div>
             <div class="row">
-                <div class="col-md-4" *ngFor="let favorito of favoritos">
+                <div class="col-md-4" *ngFor="let item of JsonData">
                     <div class="card">
                         <div class="card-body">
-                            <h3>{{favorito.name}}</h3>
-                            <p>{{favorito.startup1}}</p>
-                            <p>{{favorito.startup2}}</p>
-                            <p>{{favorito.startup3}}</p>
+                            <h3>{{item.nombre_favorito}}</h3>
+                            <div *ngFor="let st of item.lista_negocios">
+                            
+                            <p>{{st.nombreNegocio}}</p>
+                            </div>
+                            
+                         
                         </div>
                         <div class="card-footer">
                             <div class="col-4">
-                                <button class="btn btn-danger" href="">Eliminar </button>
+                                <button  id="{{item.id}}" class="btn btn-danger" (click)="deleteCard(item.id)"  href="">Eliminar</button>
                             </div>
                             <div class="col-5">
                                 <button class="btn btn-success" href="">Editar</button>
@@ -26,6 +29,8 @@
                         </div>
                     </div>
                 </div>
+                
+        
             </div>
         </div>
     </section>
