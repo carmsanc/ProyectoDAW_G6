@@ -1,22 +1,32 @@
 <div>
-<section>
-    <div class="container mt-10">
-        <div class="row">
-            <h2>Listado de favoritos</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4" *ngFor="let favorito of favoritos">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>{{favorito.name}}</h3>
-                        <p>{{favorito.categoria}}</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="">Eliminar</a>
+    <section>
+        <div class="container mt-10 ">
+            <div class="row mb-0">
+                <h2>Listado de favoritos</h2>
+            </div>
+            <div class="row pt-0">
+                <button (click)="openDialog()" class="btn btn-primary">Añadir Lista</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4" *ngFor="let favorito of favoritos">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>{{favorito.name}}</h3>
+                            <p>{{favorito.startup1}}</p>
+                            <p>{{favorito.startup2}}</p>
+                            <p>{{favorito.startup3}}</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="col-4">
+                                <button class="btn btn-danger" href="">Eliminar </button>
+                            </div>
+                            <div class="col-5">
+                                <button class="btn btn-success" href="">Editar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 </div>

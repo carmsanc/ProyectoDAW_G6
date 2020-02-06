@@ -25,8 +25,11 @@ import { AlertModule } from "./components/shared/components/alert/alert.module";
 import { TokenService } from './core/token/token.service';
 import { AuthInterceptor } from './core/auth/auth.interceptor';
 import { MessageService } from './services/message.service';
-import { FavoritosComponent } from './components/favoritos/favoritos.component';
-
+import { FavoritosComponent, DialogOverviewExampleDialog } from './components/favoritos/favoritos.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
     ContactusComponent,
     SignupComponent,
     ProfileComponent,
-    FavoritosComponent
+    FavoritosComponent,
+    DialogOverviewExampleDialog
     ],
   imports: [
     BrowserModule,
@@ -54,14 +58,19 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    AlertModule
+    AlertModule,
+    NoopAnimationsModule,
+    MatDialogModule,
   ],
+  entryComponents: [FavoritosComponent, DialogOverviewExampleDialog],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [TokenService, {
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,
     multi: true
   },
-  MessageService],
-  bootstrap: [AppComponent]
+  MessageService,
+  {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

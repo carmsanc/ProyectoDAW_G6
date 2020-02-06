@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>Crear nueva lista</h1>
+<div mat-dialog-content class= "row">
+  <p>Nombre Lista</p>
+  <input matInput [(ngModel)]="data.name">
+</div>
+<div class= "row">
+<mat-label>Startup 1</mat-label>
+  <select matNativeControl required>
+    <option value="restaurante">Restaurante A</option>
+    <option value="tienda">Tienda B</option>
+    <option value="Quiosco">Quiosco C</option>
+    <option value="negocio">Negocio D</option>
+  </select>
+</div>
+<div class= "row">
+  <mat-label>Startup 2</mat-label>
+  <select matNativeControl required>
+    <option value="restaurante">Restaurante A</option>
+    <option value="tienda">Tienda B</option>
+    <option value="Quiosco">Quiosco C</option>
+    <option value="negocio">Negocio D</option>
+  </select>
+</div>
+<div class= "row">
+  <mat-label>Startup 3</mat-label>
+  <select matNativeControl required>
+    <option value="restaurante">Restaurante A</option>
+    <option value="tienda">Tienda B</option>
+    <option value="Quiosco">Quiosco C</option>
+    <option value="negocio">Negocio D</option>
+  </select>
+</div>
+<div mat-dialog-actions>
+  <div class="col-4">
+    <button class="btn btn-danger" mat-button (click)="onNoClick()">Cancelar</button>
+  </div>
+  <div class="col-4">
+    <button mat-button class="btn btn-success" [mat-dialog-close]="data.animal" cdkFocusInitial>Guardar</button>
+  </div>
+</div>
