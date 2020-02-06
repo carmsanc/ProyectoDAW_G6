@@ -1,0 +1,22 @@
+<div>
+<section>
+    <div class="container mt-10">
+        <div class="row">
+            <h2>Listado de favoritos</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let favorito of favoritos">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>{{favorito.name}}</h3>
+                        <p>{{favorito.categoria}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
