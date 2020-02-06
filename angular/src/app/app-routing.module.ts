@@ -12,7 +12,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AuthGuard } from './core/auth/auth.guard';
-
+import { FavoritosComponent } from './components/favoritos/favoritos.component'
 
 
 const routes: Routes = [
@@ -27,8 +27,10 @@ const routes: Routes = [
   { path: 'Noticias', component: BlogComponent}, 
   { path: 'Articulo/:id', component: ArticleComponent},
   { path: '404', component: NotfoundComponent},
+  { path: 'Favoritos', component: FavoritosComponent},
   { path: 'Perfil', component: ProfileComponent, canActivate: [AuthGuard]},
   { path:'**', redirectTo: '/Login', pathMatch: 'full'},
+  
 ];
 
 @NgModule({

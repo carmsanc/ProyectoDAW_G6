@@ -25,6 +25,7 @@ import { AlertModule } from "./components/shared/components/alert/alert.module";
 import { TokenService } from './core/token/token.service';
 import { AuthInterceptor } from './core/auth/auth.interceptor';
 import { MessageService } from './services/message.service';
+import { FavoritosComponent } from './components/favoritos/favoritos.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { MessageService } from './services/message.service';
     LoginComponent,
     ContactusComponent,
     SignupComponent,
-    ProfileComponent
+    ProfileComponent,
+    FavoritosComponent
     ],
   imports: [
     BrowserModule,
