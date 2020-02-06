@@ -74,3 +74,4 @@ class FavoriteSerializer(serializers.HyperlinkedModelSerializer):
     lista_negocios=NegocioSerializer(read_only=True, many=True)
     class Meta:
         model=tblFavorite
+        fields = ['id','nombre_favorito','inversionista','lista_negocios']
