@@ -9,14 +9,17 @@ User = get_user_model()
 
 class tipoFinanciamiento(models.Model):
     nombreFinanc = models.CharField(max_length=50)
-    def __str__(self):
-        return self.nombreFinanc
+    #def __str__(self):
+    #    return self.nombreFinanc
 
 class tblInversionista(models.Model):
     persona = models.ForeignKey(User, on_delete=models.CASCADE)
     direccion = models.CharField(max_length=200)
     experienciaInversion = models.BooleanField()
-    financiamiento = models.ForeignKey(tipoFinanciamiento, on_delete = models.CASCADE)
+    financiamiento = models.ForeignKey(tipoFinanciamiento,related_name="lista_financiamiento",  on_delete = models.CASCADE)
+    #def __str__(self):
+    #    return f'Inversionista {self.persona},{self.direccion}'
+
 
 class tblStartup(models.Model):
     persona = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -25,8 +28,8 @@ class tblStartup(models.Model):
 
 class tblCategoria(models.Model):
     nombreCategoria = models.CharField(max_length=50)
-    def __str__(self):
-        return self.nombreCategoria
+    #def __str__(self):
+    #    return self.nombreCategoria
 
 class tblInteresInversion(models.Model):
     inversionista = models.ForeignKey(tblInversionista, on_delete = models.CASCADE)
@@ -35,8 +38,8 @@ class tblInteresInversion(models.Model):
 class tblActividadComercial(models.Model):
     nombreAct = models.CharField(max_length=50)
 
-    def __str__(self):
-        return self.nombreAct
+    #def __str__(self):
+    #    return self.nombreAct
 
 class tblProvincia(models.Model):
     nombreProvincia = models.CharField(max_length=50)
@@ -74,4 +77,13 @@ class tblContacto(models.Model):
     fechaContacto = models.DateTimeField()
     def __str__(self):
         return f'Contacto {self.negocio.nombreNegocio}'
+class tblFavorite(models.Model):
+    nombre_favorito = models.CharField(max_length=25)
+    inversionista = models.OneToOneField(tblInversionista,on_delete=models.CASCADE)
+    lista_negocios = models.ManyToManyField(tblNegocio)
+    def __str__(self):
+        return self.nombre_favorito
+        #return '{}'.format(self.nombre_favorito.inversionista.lista_negocios)
+
+
 # # Create your models here.
