@@ -3,7 +3,6 @@ import { FavoritosService } from "../../services/favoritos.service";
 import { UserService } from '../../core/user/user.service';
 import { UserModel } from '../../core/user/user.model';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
-import { AddListaFavsComponent } from './addListaFavs.component';
 import { ChildActivationStart } from '@angular/router';
 
 export interface DialogData {
@@ -50,7 +49,6 @@ export class FavoritosComponent implements OnInit {
     
 ];
 
-private addListaFavsRef: MatDialogRef<AddListaFavsComponent>;
 
   constructor(private userService: UserService, public dialog: MatDialog) { }
 
